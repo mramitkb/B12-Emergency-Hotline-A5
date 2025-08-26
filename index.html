@@ -24,52 +24,290 @@
     </style>
 </head>
 <body>
-    <header class="">
-        <nav class="w-10/12 mx-auto flex items-center justify-between my-4">
+    <header>
+        <!-- Navbar Section -->
+        <nav class="w-11/12 mx-auto flex items-center justify-between my-4">
             <!-- Logo -->
             <div class="flex items-center gap-2">
-                <img class="w-16" src="./assets/logo.png" alt="">
-                <h1 class="text-[#006747] text-2xl font-extrabold inter">Emergency <br>Service</h1>
+                <img class="w-14" src="./assets/logo.png" alt="">
+                <h1 class="text-[#006747] text-xl font-extrabold inter">Emergency <br>Service</h1>
             </div>
             <div class="flex items-center justify-end gap-5">
                 <!-- love -->
-                <div class="flex items-center gap-2 w-fit px-8 py-3 rounded-[50px] bg-[#ECFFF0]">
+                <div class="flex items-center gap-2 w-fit px-7 py-2 rounded-[50px] bg-[#ECFFF0]">
                     <p class="font-extrabold inter">0</p>
                     <img class="w-7" src="./assets/heart.png" alt="">
                 </div>
                 <!-- Coin -->
-                <div class="flex items-center gap-2 w-fit px-8 py-3 rounded-[50px] bg-[#ECFFF0]">
+                <div class="flex items-center gap-2 w-fit px-7 py-2 rounded-[50px] bg-[#ECFFF0]">
                     <p class="font-extrabold inter">100</p>
                     <img class="w-7" src="./assets/coin.png" alt="">
                 </div>
                 <!-- 2 Copy -->
-                <p class="font-semibold inter cursor-pointer px-9 py-3 rounded-[50px] text-white bg-[#06A544] hover:bg-[#058d39]">2 Copy</p>
+                <p class="font-semibold inter cursor-pointer px-7 py-2 rounded-[50px] text-white bg-[#06A544] hover:bg-[#058d39]">2 Copy</p>
             </div>
         </nav>
+        <!-- Banner Section -->
         <div class="banner bg-[linear-gradient(90deg,#013223_0%,#006747_49.99%,#013223_100%)] py-5 flex items-center justify-center">
-            <div class="text-white text-center space-y-3">
+            <div class="text-[#FFFFFF] text-center space-y-3">
                 <img class="w-[92px] mx-auto" src="./assets/logo-dark.png" alt="">
-                <h1 class="text-4xl font-semibold">জরুরি সেবা ডিরেক্টরি</h1>
-                <p class="text-lg font-medium">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+                <h1 class="text-3xl font-semibold">জরুরি সেবা ডিরেক্টরি</h1>
+                <p class="font-medium">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
             </div>
         </div>
     </header>
 
     <main class="bg-[#F5FFF6] pt-12 pb-20">
         <!-- Main Container -->
-        <div id="main-container" class="w-10/12 mx-auto h-40 grid grid-cols-12 gap-8">
+        <div id="main-container" class="w-11/12 mx-auto grid grid-cols-12 gap-8">
             <!-- All Cart Section -->
-            <div id="all-cart-container" class="border border-green-500 col-span-9">
+            <div id="all-cart-container" class="col-span-9 grid grid-cols-3 gap-5 w-full mx-auto">
                 <!-- One -->
-                <div class="shadow-[0_2px_3px_0_rgba(0,0,0,0.15)]">
+                <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
+                            <img class="w-8" src="./assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
                     <div>
-                        
+                        <h1 class="text-[22px] font-bold">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">999</h2>
+                        <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">সার্বজনীন</button>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-full">
+                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="w-full">
+                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Two -->
+                <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="p-[14px] bg-[#DFEFFF] rounded-2xl">
+                            <img class="w-8" src="./assets/police.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-[22px] font-bold">পুলিশ</h1>
+                        <p class="text-lg text-[#5C5C5C]">Police</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">999</h2>
+                        <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">পুলিশ</button>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-full">
+                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="w-full">
+                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Three -->
+                <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
+                            <img class="w-8" src="./assets/fire-service.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-[22px] font-bold">ফায়ার সার্ভিস</h1>
+                        <p class="text-lg text-[#5C5C5C]">Fire Service</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">999</h2>
+                        <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">ফায়ার</button>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-full">
+                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="w-full">
+                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Four -->
+                <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
+                            <img class="w-8" src="./assets/ambulance.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-[22px] font-bold">অ্যাম্বুলেন্স</h1>
+                        <p class="text-lg text-[#5C5C5C]">Ambulance</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">1994-999999</h2>
+                        <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">স্বাস্থ্য</button>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-full">
+                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="w-full">
+                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Five -->
+                <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
+                            <img class="w-8" src="./assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-[22px] font-bold">নারী ও শিশু সহায়তা</h1>
+                        <p class="text-lg text-[#5C5C5C]">Women & Child Helpline</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">109</h2>
+                        <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">সহায়তা</button>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-full">
+                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="w-full">
+                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Six -->
+                <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
+                            <img class="w-8" src="./assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-[22px] font-bold">দুদক</h1>
+                        <p class="text-lg text-[#5C5C5C]">Anti-Corruption</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">106</h2>
+                        <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">সরকারি</button>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-full">
+                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="w-full">
+                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seven -->
+                <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
+                            <img class="w-8" src="./assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-[22px] font-bold">বিদ্যুৎ বিভ্রাট</h1>
+                        <p class="text-lg text-[#5C5C5C]">Electricity Outage</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">16216</h2>
+                        <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">বিদ্যুৎ</button>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-full">
+                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="w-full">
+                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Eight -->
+                <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
+                            <img class="w-8" src="./assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-[22px] font-bold">ব্র্যাক</h1>
+                        <p class="text-lg text-[#5C5C5C]">Brac</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">16445</h2>
+                        <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">এনজিও</button>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-full">
+                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="w-full">
+                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nine -->
+                <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
+                            <img class="w-8" src="./assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-[22px] font-bold">বাংলাদেশ রেলওয়ে</h1>
+                        <p class="text-lg text-[#5C5C5C]">Bangladesh Railway</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">163</h2>
+                        <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">পরিবহন</button>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-full">
+                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="w-full">
+                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Add Cart Section -->
-            <aside id="aside-container" class="border border-red-500 col-span-3 bg-white rounded-2xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] p-6">
-
+            <aside id="aside-container" class="col-span-3 bg-white rounded-2xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] p-6">
+                <!-- Clear History -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-center gap-1">
+                        <i class="fa-regular fa-clock"></i><h2 class="text-lg font-medium">Call History</h2>
+                    </div>
+                    <button class="btn px-8 py-3 rounded-[50px] bg-[#00A63E] hover:bg-[#058d39] text-white inter">Clear</button>
+                </div>
+                <!-- Cart Added Container -->
+                <div id="add-cart-container" class="mt-4 space-y-3">
+                    <!-- Demo -->
+                    <div class="flex items-center justify-between bg-[#FAFAFA] p-4 rounded-lg">
+                        <div>
+                            <h1>জাতীয় জরুরি সেবা</h1>
+                            <p>999</p>
+                        </div>
+                        <p class="text-sm">11:36:58 AM</p>
+                    </div>
+                </div>
             </aside>
         </div>
     </main>
