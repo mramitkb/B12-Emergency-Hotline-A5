@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Hotline</title>
+    <link rel="shortcut icon" href="./assets/logo-dark.png" type="image/x-icon">
+    <!-- Tailwind & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Hind Madurai, Inter & Roboto fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+        }
+        .inter{
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="">
+        <nav class="w-10/12 mx-auto flex items-center justify-between my-4">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <img class="w-16" src="./assets/logo.png" alt="">
+                <h1 class="text-[#006747] text-2xl font-extrabold inter">Emergency <br>Service</h1>
+            </div>
+            <div class="flex items-center justify-end gap-5">
+                <!-- love -->
+                <div class="flex items-center gap-2 w-fit px-8 py-3 rounded-[50px] bg-[#ECFFF0]">
+                    <p class="font-extrabold inter">0</p>
+                    <img class="w-7" src="./assets/heart.png" alt="">
+                </div>
+                <!-- Coin -->
+                <div class="flex items-center gap-2 w-fit px-8 py-3 rounded-[50px] bg-[#ECFFF0]">
+                    <p class="font-extrabold inter">100</p>
+                    <img class="w-7" src="./assets/coin.png" alt="">
+                </div>
+                <!-- 2 Copy -->
+                <p class="font-semibold inter cursor-pointer px-9 py-3 rounded-[50px] text-white bg-[#06A544] hover:bg-[#058d39]">2 Copy</p>
+            </div>
+        </nav>
+        <div class="banner bg-[linear-gradient(90deg,#013223_0%,#006747_49.99%,#013223_100%)] py-5 flex items-center justify-center">
+            <div class="text-white text-center space-y-3">
+                <img class="w-[92px] mx-auto" src="./assets/logo-dark.png" alt="">
+                <h1 class="text-4xl font-semibold">জরুরি সেবা ডিরেক্টরি</h1>
+                <p class="text-lg font-medium">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-[#F5FFF6] pt-12 pb-20">
+        <!-- Main Container -->
+        <div id="main-container" class="w-10/12 mx-auto h-40 grid grid-cols-12 gap-8">
+            <!-- All Cart Section -->
+            <div id="all-cart-container" class="border border-green-500 col-span-9">
+                <!-- One -->
+                <div class="shadow-[0_2px_3px_0_rgba(0,0,0,0.15)]">
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Add Cart Section -->
+            <aside id="aside-container" class="border border-red-500 col-span-3 bg-white rounded-2xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] p-6">
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- Script -->
+     <script src="./script.js"></script>
+</body>
+</html>
