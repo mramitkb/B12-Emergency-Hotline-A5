@@ -6,11 +6,11 @@
     <title>Emergency Hotline</title>
     <link rel="shortcut icon" href="./assets/logo-dark.png" type="image/x-icon">
     <!-- Tailwind & DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" /> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Hind Madurai, Inter & Roboto fonts -->
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
         <!-- Main Container -->
         <div id="main-container" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
             <!-- All Cart Section -->
-            <div id="all-cart-container" class="md:col-span-9 grid grid-cols-1 md:grid-cols-3 gap-5 w-full mx-auto">
+            <div id="all-cart-container" class="md:col-span-8 lg:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full mx-auto">
                 <!-- One -->
                 <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
                     <div class="flex items-center justify-between">
@@ -78,12 +78,17 @@
                         <h2 class="text-3xl font-bold">999</h2>
                         <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">সার্বজনীন</button>
                     </div>
+                    <!-- Buttons -->
+                    <!-- <div class="flex items-center justify-center gap-2">
+                        <button class="copies w-full p-2 border border-[#D4D6D5] rounded-xl text-[#5C5C5C] hover:bg-[#f8f7f7] cursor-pointer"><i class="fa-solid fa-copy"></i>Copy</button>
+                        <button class="calls w-full p-2 bg-[#00A63E] rounded-xl hover:bg-[#058d39] text-white cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                    </div> -->
                     <div class="flex items-center gap-3">
                         <div class="w-full">
-                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
+                           <button class="copies p-2 w-full border border-[#D4D6D5] rounded-xl text-[#5C5C5C] hover:bg-[#f8f7f7] cursor-pointer"><i class="fa-regular fa-copy copies"></i> Copy</button>
                         </div>
                         <div class="w-full">
-                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
+                            <button class="calls p-2 w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white cursor-pointer"><i class="fa-solid fa-phone calls"></i> Call</button>
                         </div>
                     </div>
                 </div>
@@ -289,13 +294,13 @@
                 </div>
             </div>
             <!-- Add History Section -->
-            <aside id="aside-container" class="md:col-span-3 bg-white rounded-2xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] p-6">
+            <aside id="aside-container" class="md:col-span-4 lg:col-span-3 bg-white rounded-2xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] p-6">
                 <!-- Clear History -->
                 <div class="flex items-center justify-between">
                     <div class="flex items-center justify-center gap-1">
                         <i class="fa-regular fa-clock"></i><h2 class="text-lg font-medium">Call History</h2>
                     </div>
-                    <button id="clear-history" class="btn px-8 py-3 rounded-[50px] bg-[#00A63E] hover:bg-[#058d39] text-white inter">Clear</button>
+                    <button id="clear-history" class="px-2 py-1 md:px-4 md:py-2 rounded-[50px] bg-[#00A63E] hover:bg-[#058d39] text-white inter cursor-pointer">Clear</button>
                 </div>
                 <!-- Cart Added Container -->
                 <div id="add-cart-container" class="mt-4 space-y-3">
