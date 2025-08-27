@@ -38,7 +38,8 @@ To create a new element and insert it into the DOM....
                 1. Capture Phase
                 2. Target Phase
                 3. Bubbling Phase
-    ##### Explanation: When we click on a button, the Event will go through the "Capturing" phase, capturing parent to child elements one by one, and retrieve the "Target Phase" element. Then again, it will go through "Bubbling" child element to     parent element. If I clicked a "Button" which is inside a div, then the button is a child element of the div and the "div" itself is a parent element. So, when I clicked the "Button", 1st it will show the button event and then also it will show its parents.
+#### Explanation:
+When we click on a button, the Event will go through the "Capturing" phase, capturing parent to child elements one by one, and retrieve the "Target Phase" element. Then again, it will go through "Bubbling" child element to     parent element. If I clicked a "Button" which is inside a div, then the button is a child element of the div and the "div" itself is a parent element. So, when I clicked the "Button", 1st it will show the button event and then also it will show its parents.
 
 
 
