@@ -7,6 +7,12 @@ function getElement(id) {
 
 // Event Delegation
 getElement('all-cart-container').addEventListener('click', function(e) {
+    // All content for access
+        const serviceTitle = e.target.parentNode.parentNode.parentNode.children[1].children[0].innerText;
+        const serviceName = e.target.parentNode.parentNode.parentNode.children[1].children[1].innerText;
+        const serviceNumber = e.target.parentNode.parentNode.parentNode.children[2].children[0].innerText;
+        const currentTime = new Date().toLocaleTimeString();
+        const historyContainer = getElement('add-cart-container');
 
     // Heart Count Event
     if(e.target.className.includes('hearts')) {
@@ -20,12 +26,7 @@ getElement('all-cart-container').addEventListener('click', function(e) {
 
     // Call Button Event
     if(e.target.className.includes("calls")) {
-        // All content for access
-        const serviceTitle = e.target.parentNode.parentNode.parentNode.children[1].children[0].innerText;
-        const serviceName = e.target.parentNode.parentNode.parentNode.children[1].children[1].innerText;
-        const serviceNumber = e.target.parentNode.parentNode.parentNode.children[2].children[0].innerText;
-        const currentTime = new Date().toLocaleTimeString();
-        
+
         // get total coin
         const totalCoin = getElement('total-coin').innerText;
         
@@ -46,7 +47,6 @@ getElement('all-cart-container').addEventListener('click', function(e) {
         
 
         // Show on call history-----------------------------
-        const historyContainer = getElement('add-cart-container');
         const div = document.createElement('div');
         div.innerHTML = `
                     <div class="flex items-center justify-between bg-[#FAFAFA] p-4 rounded-lg">
@@ -59,4 +59,25 @@ getElement('all-cart-container').addEventListener('click', function(e) {
         `
         historyContainer.appendChild(div);
     }
+
+
+    // Copy Count Event
+    if(e.target.className.includes("copies")) {
+        
+        alert(`নম্বর কপি হয়েছেঃ ${serviceNumber}`)
+        // get copy count
+        const copyCount = getElement('copy-count').innerText;
+        // update copy count
+        const updateCopyCount = Number(copyCount) + 1;
+        // set copy count
+        getElement('copy-count').innerText = updateCopyCount
+        
+    }
 })
+
+
+// Clear History Event
+const clearHistory = getElement('clear-history').addEventListener('click', function() {
+    const historyContainer = getElement('add-cart-container');
+    historyContainer.innerHTML = "";
+});

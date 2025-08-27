@@ -44,7 +44,7 @@
                     <img class="w-7" src="./assets/coin.png" alt="">
                 </div>
                 <!-- 2 Copy -->
-                <p class="font-semibold inter cursor-pointer px-7 py-2 rounded-[50px] text-white bg-[#06A544] hover:bg-[#058d39]">2 Copy</p>
+                <p class="font-semibold inter cursor-pointer px-7 py-2 rounded-[50px] text-white bg-[#06A544] hover:bg-[#058d39]"><span id="copy-count">0</span> Copy</p>
             </div>
         </nav>
         <!-- Banner Section -->
@@ -84,8 +84,12 @@
                            <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
                         <!-- Call -->
+                        <!-- <button class="calls w-fit btn rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white cursor-pointer">
+                            <i class="fa-solid fa-phone calls"></i>
+                            <p class="calls">Call</p>
+                        </button> -->
                         <div class="w-full">
-                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="calls fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -297,7 +301,7 @@
                     <div class="flex items-center justify-center gap-1">
                         <i class="fa-regular fa-clock"></i><h2 class="text-lg font-medium">Call History</h2>
                     </div>
-                    <button class="btn px-8 py-3 rounded-[50px] bg-[#00A63E] hover:bg-[#058d39] text-white inter">Clear</button>
+                    <button id="clear-history" class="btn px-8 py-3 rounded-[50px] bg-[#00A63E] hover:bg-[#058d39] text-white inter">Clear</button>
                 </div>
                 <!-- Cart Added Container -->
                 <div id="add-cart-container" class="mt-4 space-y-3">
