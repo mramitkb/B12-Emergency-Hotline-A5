@@ -8,8 +8,8 @@ function getElement(id) {
 // Event Delegation
 getElement('all-cart-container').addEventListener('click', function(e) {
     // All content for access
-        const serviceBangla = e.target.parentNode.parentNode.parentNode.children[1].children[0].innerText;
-        const serviceEnglish = e.target.parentNode.parentNode.parentNode.children[1].children[1].innerText;
+        const serviceTitle = e.target.parentNode.parentNode.parentNode.children[1].children[0].innerText;
+        const serviceName = e.target.parentNode.parentNode.parentNode.children[1].children[1].innerText;
         const serviceNumber = e.target.parentNode.parentNode.parentNode.children[2].children[0].innerText;
         const currentTime = new Date().toLocaleTimeString();
         const historyContainer = getElement('add-cart-container');
@@ -36,7 +36,7 @@ getElement('all-cart-container').addEventListener('click', function(e) {
         }
         
         // Show alert when call button clicked
-        alert(`📞 Calling ${serviceEnglish} ${serviceNumber}...`);
+        alert(`📞 Calling ${serviceName} ${serviceNumber}...`);
         
         // Reduce coins for each call-----------------------
         
@@ -51,7 +51,7 @@ getElement('all-cart-container').addEventListener('click', function(e) {
         div.innerHTML = `
                     <div class="flex items-center justify-between bg-[#FAFAFA] p-4 rounded-lg">
                         <div>
-                            <h1>${serviceBangla}</h1>
+                            <h1>${serviceTitle}</h1>
                             <p>${serviceNumber}</p>
                         </div>
                         <p class="text-sm">${currentTime}</p>

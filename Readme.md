@@ -5,7 +5,7 @@
 5. What is the difference between preventDefault() and stopPropagation() methods?
 
 
-<!-- 1st Question: Answer -->
+##1st Answer:
 `getElementById` = "getElementById" gives us a single element which matched with Unique ID.
 
 `getElementsByClassName` = "getElementsByClassName" gives us all the Elements with same className in HTMLCollection.
@@ -16,7 +16,7 @@
 
 
 
-<!-- 2nd Question: Answer -->
+2nd Answer:
 To create a new element and Insert into the DOM....
     <!-- 1. get the Container where I want to append -->
     const container = document.getElementById('container);
@@ -29,7 +29,7 @@ To create a new element and Insert into the DOM....
 
 
 
-<!-- 3rd Question: Answer -->
+3rd Answer: 
 Event Bubbling: Event Bubbling has 3 phases.
                 1. Capture Phase
                 2. Target Phase
@@ -39,7 +39,7 @@ Event Bubbling: Event Bubbling has 3 phases.
 
 
 
-<!-- 4th Question: Answer -->
+4th Answer:
 Event Delegation: Instead of put multiple event listener to the child elements, We can use the main Parent for the event so that we can see where event.target clicked with the help of "Event Bubbling". 
 Useful: 1. We can use it for Dynamic changes to the document
         2. Code Efficiency- cause we don't need to use every child for the event
@@ -48,7 +48,7 @@ Useful: 1. We can use it for Dynamic changes to the document
 
 
 
-<!-- 5th Question: Answer -->
+5th Answer:
 `preventDefault()`: preventDefault() used for "form" section, whenever we submit the required form it will   automatically reload for its own behave. To stop auto reload we use this "preventDefault()".
 
 `stopPropagation()`: stopPropagation() stop the event Bubbling which are going to the parent from child element. If we don't want to use bubbling & delegate in a specific element after a event trigger, then we will use stopPropagation().
