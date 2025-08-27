@@ -26,11 +26,11 @@
 <body>
     <header>
         <!-- Navbar Section -->
-        <nav class="w-11/12 mx-auto flex items-center justify-between my-4">
+        <nav class="w-11/12 mx-auto flex flex-col md:flex-row space-y-5 md:space-y-0 items-center justify-between my-4">
             <!-- Logo -->
             <div class="flex items-center gap-2">
                 <img class="w-14" src="./assets/logo.png" alt="">
-                <h1 class="text-[#006747] text-xl font-extrabold inter">Emergency <br>Service</h1>
+                <h1 class="text-[#006747] text-3xl md:text-xl font-extrabold inter">Emergency <br class="hidden md:visible">Service</h1>
             </div>
             <div class="flex items-center justify-end gap-5">
                 <!-- love -->
@@ -44,24 +44,24 @@
                     <img class="w-7" src="./assets/coin.png" alt="">
                 </div>
                 <!-- 2 Copy -->
-                <p class="font-semibold inter cursor-pointer px-7 py-2 rounded-[50px] text-white bg-[#06A544] hover:bg-[#058d39]"><span id="copy-count">0</span> Copy</p>
+                <p class="font-semibold inter px-7 py-2 rounded-[50px] text-white bg-[#06A544]"><span id="copy-count" class="inter">0</span> Copy</p>
             </div>
         </nav>
         <!-- Banner Section -->
-        <div class="banner bg-[linear-gradient(90deg,#013223_0%,#006747_49.99%,#013223_100%)] py-5 flex items-center justify-center">
+        <div class="banner mt-10 md:mt-0 bg-[linear-gradient(90deg,#013223_0%,#006747_49.99%,#013223_100%)] py-5 flex items-center justify-center">
             <div class="text-[#FFFFFF] text-center space-y-3">
                 <img class="w-[92px] mx-auto" src="./assets/logo-dark.png" alt="">
                 <h1 class="text-3xl font-semibold">জরুরি সেবা ডিরেক্টরি</h1>
-                <p class="font-medium">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+                <p class="font-medium text-sm md:text-base">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
             </div>
         </div>
     </header>
 
     <main class="bg-[#F5FFF6] pt-12 pb-20">
         <!-- Main Container -->
-        <div id="main-container" class="w-11/12 mx-auto grid grid-cols-12 gap-8">
+        <div id="main-container" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
             <!-- All Cart Section -->
-            <div id="all-cart-container" class="col-span-9 grid grid-cols-3 gap-5 w-full mx-auto">
+            <div id="all-cart-container" class="md:col-span-9 grid grid-cols-1 md:grid-cols-3 gap-5 w-full mx-auto">
                 <!-- One -->
                 <div class="carts bg-white p-8 space-y-5 w-full mx-auto shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl">
                     <div class="flex items-center justify-between">
@@ -79,15 +79,9 @@
                         <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">সার্বজনীন</button>
                     </div>
                     <div class="flex items-center gap-3">
-                        <!-- Copy -->
                         <div class="w-full">
                            <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
-                        <!-- Call -->
-                        <!-- <button class="calls w-fit btn rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white cursor-pointer">
-                            <i class="fa-solid fa-phone calls"></i>
-                            <p class="calls">Call</p>
-                        </button> -->
                         <div class="w-full">
                             <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
@@ -294,8 +288,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Add Cart Section -->
-            <aside id="aside-container" class="col-span-3 bg-white rounded-2xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] p-6">
+            <!-- Add History Section -->
+            <aside id="aside-container" class="md:col-span-3 bg-white rounded-2xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] p-6">
                 <!-- Clear History -->
                 <div class="flex items-center justify-between">
                     <div class="flex items-center justify-center gap-1">

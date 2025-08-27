@@ -61,16 +61,20 @@ getElement('all-cart-container').addEventListener('click', function(e) {
     }
 
 
-    // Copy Count Event
+    // Copy Number & Increase Count Event
     if(e.target.className.includes("copies")) {
         
-        alert(`নম্বর কপি হয়েছেঃ ${serviceNumber}`)
+        alert(`নম্বর কপি হয়েছেঃ ${serviceNumber}`);
         // get copy count
         const copyCount = getElement('copy-count').innerText;
         // update copy count
         const updateCopyCount = Number(copyCount) + 1;
         // set copy count
-        getElement('copy-count').innerText = updateCopyCount
+        getElement('copy-count').innerText = updateCopyCount;
+        
+
+        // Copy Text
+        navigator.clipboard.writeText(serviceNumber);
         
     }
 })
