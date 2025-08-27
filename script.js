@@ -51,7 +51,7 @@ getElement('all-cart-container').addEventListener('click', function(e) {
         div.innerHTML = `
                     <div class="flex items-center justify-between bg-[#FAFAFA] p-4 rounded-lg">
                         <div>
-                            <h1>${serviceTitle}</h1>
+                            <h1 class="font-semibold">${serviceTitle}</h1>
                             <p>${serviceNumber}</p>
                         </div>
                         <p class="text-sm">${currentTime}</p>
