@@ -35,12 +35,12 @@
             <div class="flex items-center justify-end gap-5">
                 <!-- love -->
                 <div class="flex items-center gap-2 w-fit px-7 py-2 rounded-[50px] bg-[#ECFFF0]">
-                    <p class="font-extrabold inter">0</p>
+                    <p id="heart-count" class="font-extrabold inter">0</p>
                     <img class="w-7" src="./assets/heart.png" alt="">
                 </div>
                 <!-- Coin -->
                 <div class="flex items-center gap-2 w-fit px-7 py-2 rounded-[50px] bg-[#ECFFF0]">
-                    <p class="font-extrabold inter">100</p>
+                    <p id="total-coin" class="font-extrabold inter">100</p>
                     <img class="w-7" src="./assets/coin.png" alt="">
                 </div>
                 <!-- 2 Copy -->
@@ -68,7 +68,7 @@
                         <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        <i class="fa-regular hearts fa-heart text-2xl cursor-pointer"></i>
                     </div>
                     <div>
                         <h1 class="text-[22px] font-bold">জাতীয় জরুরি সেবা</h1>
@@ -79,11 +79,13 @@
                         <button class="btn border-none text-lg font-normal text-[#5C5C5C] px-4 py-2 bg-[#F2F2F2] w-fit rounded-3xl">সার্বজনীন</button>
                     </div>
                     <div class="flex items-center gap-3">
-                        <div class="w-full">
-                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <!-- Copy -->
+                        <div class="w-ful">
+                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
+                        <!-- Call -->
                         <div class="w-full">
-                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -93,7 +95,7 @@
                         <div class="p-[14px] bg-[#DFEFFF] rounded-2xl">
                             <img class="w-8" src="./assets/police.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        <i class="fa-regular hearts fa-heart text-2xl cursor-pointer"></i>
                     </div>
                     <div>
                         <h1 class="text-[22px] font-bold">পুলিশ</h1>
@@ -105,10 +107,10 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-full">
-                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
                         <div class="w-full">
-                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -118,7 +120,7 @@
                         <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
                             <img class="w-8" src="./assets/fire-service.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        <i class="fa-regular hearts fa-heart text-2xl cursor-pointer"></i>
                     </div>
                     <div>
                         <h1 class="text-[22px] font-bold">ফায়ার সার্ভিস</h1>
@@ -130,10 +132,10 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-full">
-                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
                         <div class="w-full">
-                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -143,7 +145,7 @@
                         <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
                             <img class="w-8" src="./assets/ambulance.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        <i class="fa-regular hearts fa-heart text-2xl cursor-pointer"></i>
                     </div>
                     <div>
                         <h1 class="text-[22px] font-bold">অ্যাম্বুলেন্স</h1>
@@ -155,10 +157,10 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-full">
-                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
                         <div class="w-full">
-                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -168,7 +170,7 @@
                         <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        <i class="fa-regular hearts fa-heart text-2xl cursor-pointer"></i>
                     </div>
                     <div>
                         <h1 class="text-[22px] font-bold">নারী ও শিশু সহায়তা</h1>
@@ -180,10 +182,10 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-full">
-                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
                         <div class="w-full">
-                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -193,7 +195,7 @@
                         <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        <i class="fa-regular hearts fa-heart text-2xl cursor-pointer"></i>
                     </div>
                     <div>
                         <h1 class="text-[22px] font-bold">দুদক</h1>
@@ -205,10 +207,10 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-full">
-                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
                         <div class="w-full">
-                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -218,7 +220,7 @@
                         <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        <i class="fa-regular hearts fa-heart text-2xl cursor-pointer"></i>
                     </div>
                     <div>
                         <h1 class="text-[22px] font-bold">বিদ্যুৎ বিভ্রাট</h1>
@@ -230,10 +232,10 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-full">
-                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
                         <div class="w-full">
-                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -243,7 +245,7 @@
                         <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        <i class="fa-regular hearts fa-heart text-2xl cursor-pointer"></i>
                     </div>
                     <div>
                         <h1 class="text-[22px] font-bold">ব্র্যাক</h1>
@@ -255,10 +257,10 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-full">
-                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
                         <div class="w-full">
-                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -268,7 +270,7 @@
                         <div class="p-[14px] bg-[#FFE3E2] rounded-2xl">
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        <i class="fa-regular hearts fa-heart text-2xl cursor-pointer"></i>
                     </div>
                     <div>
                         <h1 class="text-[22px] font-bold">বাংলাদেশ রেলওয়ে</h1>
@@ -280,10 +282,10 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-full">
-                           <button class="btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                           <button class="copies btn w-full rounded-xl text-[#5C5C5C]"><i class="fa-regular fa-copy copies"></i>Copy</button>
                         </div>
                         <div class="w-full">
-                            <button class="btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="calls btn w-full rounded-xl bg-[#00A63E] hover:bg-[#058d39] text-white"><i class="fa-solid fa-phone calls"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -300,13 +302,13 @@
                 <!-- Cart Added Container -->
                 <div id="add-cart-container" class="mt-4 space-y-3">
                     <!-- Demo -->
-                    <div class="flex items-center justify-between bg-[#FAFAFA] p-4 rounded-lg">
+                    <!-- <div class="flex items-center justify-between bg-[#FAFAFA] p-4 rounded-lg">
                         <div>
                             <h1>জাতীয় জরুরি সেবা</h1>
                             <p>999</p>
                         </div>
                         <p class="text-sm">11:36:58 AM</p>
-                    </div>
+                    </div> -->
                 </div>
             </aside>
         </div>
