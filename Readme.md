@@ -35,6 +35,7 @@ To create a new element and insert it into the DOM....
 
 ### 3rd Answer: 
 `Event Bubbling`: Event Bubbling has 3 phases.
+                
                 1. Capture Phase
                 2. Target Phase
                 3. Bubbling Phase
